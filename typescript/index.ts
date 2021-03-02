@@ -9,3 +9,10 @@ const userObject = (
 ) => {
     console.log(id, user.age, ' ', user.name);
 }
+
+// function signatures
+let myFunction: (x: string, y: number, z: boolean, user: {id: string, name: string}) => string;
+
+myFunction = (a: string, b: number, z:boolean, user: { id: string, name: string }) => {
+    return '123';
+}
