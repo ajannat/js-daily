@@ -33,3 +33,18 @@ class Player{
 const pl = new Player('jannat', 25, true);
 const arr: Player[] = [];
 arr.push(pl);
+
+// access modifiers
+class Player2{
+    private name: string;
+    age: number;
+    readonly male: boolean;
+
+    constructor(n: string, a: number, m: boolean){
+        this.name = n;
+        this.age = a;
+        this.male = m;
+    }
+}
+
+const pl2 = new Player2('jannat', 25, true);// cannot get or set using instance
