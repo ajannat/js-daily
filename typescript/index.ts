@@ -17,19 +17,8 @@ myFunction = (a: string, b: number, z:boolean, user: { id: string, name: string 
     return '123';
 }
 
-// classes
-class Player{
-    name: string;
-    age: number;
-    male: boolean;
-
-    constructor(n: string, a: number, m: boolean){
-        this.name = n;
-        this.age = a;
-        this.male = m;
-    }
-}
-
+// module
+import {Player} from './classes/Player'
 const pl = new Player('jannat', 25, true);
 const arr: Player[] = [];
 arr.push(pl);
