@@ -66,3 +66,22 @@ let user = addID({
     name: 'jannat',
     age: 26
 })
+
+// enums
+enum ResponseType{
+    SUCCESS,
+    FAILURE,
+    NOTFOUND
+};
+
+interface APIResponse<T>{
+    status: number,
+    type: ResponseType,
+    data: T
+}
+
+const response1: APIResponse<string> = {
+    status: 200,
+    type: ResponseType.SUCCESS,
+    data: 'test'
+}
