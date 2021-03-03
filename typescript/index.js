@@ -1,4 +1,6 @@
+"use strict";
 // type aliases
+exports.__esModule = true;
 var userObject = function (id, user) {
     console.log(id, user.age, ' ', user.name);
 };
@@ -7,16 +9,9 @@ var myFunction;
 myFunction = function (a, b, z, user) {
     return '123';
 };
-// classes
-var Player = /** @class */ (function () {
-    function Player(n, a, m) {
-        this.name = n;
-        this.age = a;
-        this.male = m;
-    }
-    return Player;
-}());
-var pl = new Player('jannat', 25, true);
+// module
+var Player_1 = require("./classes/Player");
+var pl = new Player_1.Player('jannat', 25, true);
 var arr = [];
 arr.push(pl);
 // access modifiers
@@ -28,5 +23,12 @@ var Player2 = /** @class */ (function () {
     }
     return Player2;
 }());
-var pl2 = new Player2('jannat', 25, true);
-// cannot get or set using instance
+var pl2 = new Player2('jannat', 25, true); // cannot get or set using instance
+function drawRectangle(value) {
+    var width = value.width;
+    var length = value.length;
+}
+drawRectangle({
+    width: 30,
+    length: 20
+});

@@ -37,3 +37,20 @@ class Player2{
 }
 
 const pl2 = new Player2('jannat', 25, true);// cannot get or set using instance
+
+// interface on object
+
+interface RectangleOptions{
+    width: number,
+    length: number
+}
+
+function drawRectangle(value: RectangleOptions){
+    let width = value.width;
+    let length = value.length;
+}
+
+drawRectangle({
+    width: 30,
+    length: 20
+})
