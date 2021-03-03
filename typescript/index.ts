@@ -54,3 +54,15 @@ drawRectangle({
     width: 30,
     length: 20
 })
+
+// generics
+
+const addID = <T>(obj: T) => {
+    let id = 1;
+    return {...obj, id};
+}
+
+let user = addID({
+    name: 'jannat',
+    age: 26
+})
