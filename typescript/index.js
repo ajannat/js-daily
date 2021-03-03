@@ -1,5 +1,16 @@
 "use strict";
 // type aliases
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 exports.__esModule = true;
 var userObject = function (id, user) {
     console.log(id, user.age, ' ', user.name);
@@ -32,3 +43,28 @@ drawRectangle({
     width: 30,
     length: 20
 });
+// generics
+var addID = function (obj) {
+    var id = 1;
+    return __assign(__assign({}, obj), { id: id });
+};
+var user = addID({
+    name: 'jannat',
+    age: 26
+});
+// enums
+var ResponseType;
+(function (ResponseType) {
+    ResponseType[ResponseType["SUCCESS"] = 0] = "SUCCESS";
+    ResponseType[ResponseType["FAILURE"] = 1] = "FAILURE";
+    ResponseType[ResponseType["NOTFOUND"] = 2] = "NOTFOUND";
+})(ResponseType || (ResponseType = {}));
+;
+var response1 = {
+    status: 200,
+    type: ResponseType.SUCCESS,
+    data: 'test'
+};
+// tuples
+var a = [12, 'asd'];
+// a[1] = 12; cannot assign number to type string

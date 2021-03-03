@@ -85,3 +85,8 @@ const response1: APIResponse<string> = {
     type: ResponseType.SUCCESS,
     data: 'test'
 }
+
+// tuples
+let a:[number, string] = [12, 'asd'];
+
+// a[1] = 12; cannot assign number to type string
