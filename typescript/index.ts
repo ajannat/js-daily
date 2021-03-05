@@ -3,6 +3,12 @@ let name = 'jannat';
 console.log(name);
 // name = 34; cannot assign number to type string
 
+// explicit and union types
+let union: string | number;
+
+union = "jannat";
+union = 34;
+
 // type aliases
 
 type stringOrNum = string | number;
