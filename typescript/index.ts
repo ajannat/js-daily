@@ -9,6 +9,12 @@ let union: string | number;
 union = "jannat";
 union = 34;
 
+// dynamic types
+let type: any;
+type = 'any';
+type = 26;
+type = false;
+
 // type aliases
 
 type stringOrNum = string | number;
