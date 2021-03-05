@@ -1,3 +1,8 @@
+// type basics
+let name = 'jannat';
+console.log(name);
+// name = 34; cannot assign number to type string
+
 // type aliases
 
 type stringOrNum = string | number;
