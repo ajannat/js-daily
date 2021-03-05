@@ -1,5 +1,4 @@
 "use strict";
-// type aliases
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -12,6 +11,24 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 exports.__esModule = true;
+// type basics
+var name = 'jannat';
+console.log(name);
+// name = 34; cannot assign number to type string
+// explicit and union types
+var union;
+union = "jannat";
+union = 34;
+// dynamic types
+var type;
+type = 'any';
+type = 26;
+type = false;
+// functions
+var myFunc = function (a, b) {
+    console.log(a + b);
+};
+myFunc(5, 6);
 var userObject = function (id, user) {
     console.log(id, user.age, ' ', user.name);
 };

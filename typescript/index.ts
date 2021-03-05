@@ -15,8 +15,12 @@ type = 'any';
 type = 26;
 type = false;
 
+// functions
+let myFunc:Function = (a: number, b: number, c?: string) => {
+    console.log(a+b);
+}
+myFunc(5, 6);
 // type aliases
-
 type stringOrNum = string | number;
 type userType = { name: string; age: number }
 
