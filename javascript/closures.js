@@ -30,3 +30,14 @@ for(var i = 0; i < 1000000; i++){
     var a = Math.random() * 1000000;
 }
 timer();
+
+// closure in async
+function async(){
+    var a = 20;
+
+    setTimeout(()=>{
+        console.log(a);
+    })
+}
+
+// 
