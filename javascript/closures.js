@@ -40,4 +40,13 @@ function async(){
     })
 }
 
-// 
+// closure in api call
+function callApi(url){
+    fetch(url)
+    .then((res) => {
+        console.log(res);
+    })
+}
+
+callApi("something.com");
+// closure is a function with some remembered values
