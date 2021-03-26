@@ -19,3 +19,18 @@ Person.prototype = {
 };
 const jannat = Person('jannat', 26);
 jannat.eat();
+
+class Bird{
+    constructor(name, color){
+        this.name = name;
+        this.color = color;
+    }
+
+    fly(){
+        console.log(`${this.name} is flying`);
+    }
+}
+
+
+const bird1 = new Bird('Macaw', 'blue');
+bird1.fly();
